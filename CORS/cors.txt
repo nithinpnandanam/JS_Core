@@ -1,0 +1,20 @@
+Cross Origin Resource Sharing
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Refer Image 1
+from one origin (domain) we cannot get data from another origin (doamin)
+we couldn't get data from other sub domain
+we couldn't get data from other ports
+we couldn't get data if the network protocal was different
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Refer Image 2
+
+lets say we need data from origin 2 which is a server
+origin 1 being the client
+A sends a "preflight request" to B
+This preflight is also called Options
+The server then responds back so the client knows they can do the actual post/get request
+The server responds to the preflight request with appropriate CORS headers.
+If the server permits , it includes headers like Access-Control-Allow-Origin, Access-Control-Allow-Methods in the response.
+most commonly used headers are "accept control allow origin "
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
